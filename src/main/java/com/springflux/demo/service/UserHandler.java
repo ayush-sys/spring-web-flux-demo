@@ -2,7 +2,6 @@ package com.springflux.demo.service;
 
 import java.time.LocalDateTime;
 
-import org.springframework.cglib.core.Local;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;
@@ -14,7 +13,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @Component
-public class UserComponent {
+public class UserHandler {
 
   public Mono<ServerResponse> allUsers(ServerRequest request) {
 
